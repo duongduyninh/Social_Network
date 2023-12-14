@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "paths": {
+      "@features/*": ["features/*"],
+      "@Context/*": ["Context/*"],
+      "@Components/*": ["Components/*"],
+      "@Hooks/*": ["Hooks/*"],
+      "@utils/*": ["utils/*"],
+      "@config/*": ["config/*"],
+      "@public/*": ["public/*"],
+      "@styles/*": ["styles/*"],
+      "@Types/*": ["Types/*"],
+      "@HOCs/*": ["HOCs/*"],
+      "@Apis/*": ["Apis/*"],
+      "@Class/*": ["Class/*"],
+      "@Constant/*": ["Constant/*"]
+    },
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "Apis/authentication.api.js", "features/Authentication/login.js", "Apis/index.js", "features/Authentication/register.js", "features/Authentication/DefaultLayout.js", "features/Authentication/pages/loginPage.page.js", "features/Authentication/pages/registerPage.page.js", "Components/Button/index.js", "Components/Button/friendsButton.js", "Constant/Reactions.js", "Constant/Conversations.js", "Constant/Contact.hs", "Constant/Comments.js", "Constant/Announcements.js", "Components/ZoomImage/index.js", "Components/Skeleton/index.js", "Context/DetectElement.Context.js", "Context/Theme.Context.js", "Context/MessagesBox.Context.js", "features/layout/components/Contact/index.js", "features/homePage/pages/homePage.page.js", "features/homePage/Components/skeleton.js", "features/layout/components/DefaultLayout.js", "features/layout/components/Sidebar/index.js", "pages/_app.js", "pages/_document.js", "pages/404.js", "pages/index.js", "HOCs/NoneLoggedPages.js", "HOCs/LoggedPages.js", "features/LoadingPage/index.js", "utils/toastConfig.js", "pages/Login/index.js", "pages/Register/index.js", "Hooks/useAuthentication.js", "Hooks/useDebounce.js", "Hooks/useFormValidation.js", "pages/[userName]/index.js", "features/usersPage/Components/Friends/FriendsContainer.js", "features/usersPage/Top/index.js", "features/usersPage/pages/usersPage.page.js", "features/usersPage/index.js", "Components/Messages/index.js", "features/Search/People/pages/PeopleOverView.js", "pages/Search/People/index.js", "features/userSetting/index.js", "features/userSetting/pages/UserSettingOverView.js", "pages/Setting/index.js", "features/userSetting/Components/General.js", "features/userSetting/Components/Security/Components/Password.js", "features/userSetting/Components/Security/Security.js"],
+  "exclude": ["node_modules"]
+}

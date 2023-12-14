@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "zyR5jxYp9uSpqREA53wu8iC9gX4NtmdIq1YQKINrU80=",
+  "Source": "DoAn4",
+  "BasePath": "_content/DoAn4",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DoAn4\\wwwroot",
+      "Source": "DoAn4",
+      "ContentRoot": "F:\\Visual Studio\\DoAn4\\DoAn4\\wwwroot\\",
+      "BasePath": "_content/DoAn4",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

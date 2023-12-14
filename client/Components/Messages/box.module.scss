@@ -1,0 +1,246 @@
+.box {
+  &Wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 455px;
+    width: 360px;
+    background-color: #ffff;
+    box-shadow: var(--box-shadow-primary);
+    border-radius: 10px 10px 0 0;
+    color: var(--text-primary);
+  }
+
+  &Top {
+    display: flex;
+    color: #677483;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 1px 2px hsl(0deg 0% 0% / 10%), 0 -1px #ffffff0d inset, 0 2px 1px -1px #ffffff0d inset;
+    border-bottom: 1.2px solid #d1d1d1;
+    .online {
+      bottom: 7px;
+      right: -3px;
+    }
+    &>div{
+      color: #292e33c8;
+    }
+
+
+  }
+
+  &Main {
+    padding: 10px;
+    overflow: auto;
+    font-size: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &Bottom {
+    padding: 10px 5px;
+    width: 100%;
+    max-height: 140px;
+    overflow: auto;
+    background-color: rgba(22, 133, 207, 0.07);
+  }
+}
+
+.activeTime {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.inp {
+  outline: none;
+  border-radius: 20px;
+  background: var(--secondary);
+  max-width: 100%;
+  width: 100%;
+  padding: 8px 12px;
+  overflow-wrap: anywhere;
+  background: rgba(22, 133, 207, 0.07);
+  color: #292e33;
+  &::placeholder{
+      color: #5f6a77be;
+  }
+}
+
+.icon-control {
+  cursor: pointer;
+  color: var(--blue);
+  padding: 2px;
+  border-radius: 100%;
+  box-sizing: content-box;
+  transition: background-color 0.2s linear;
+  flex: 1;
+
+  &:hover {
+    background-color: var(--secondary);
+  }
+}
+
+.boxMain-item {
+  display: flex;
+  z-index: 99;
+
+
+  &.isLoading {
+    opacity: 0.5;
+  }
+
+  &:has(.you) {
+    justify-content: flex-end;
+
+    .item-control {
+      // left: -20%;
+      transform: translate(-48px, 50%);
+    }
+  }
+
+  &:hover .item-control {
+    svg {
+      visibility: unset;
+    }
+  }
+}
+
+.you,
+.yourFriend {
+  position: relative;
+  z-index: 1;
+  max-width: 207px;
+  padding: 10px;
+  color: white;
+  margin-top: 10px;
+  word-wrap: break-word;
+  background-color: rgba(76, 78, 100, 0.05);
+  border-radius: 15px 15px;
+  box-shadow: rgb(76 78 100 / 20%) 1px 1px 3px 1px;
+  padding: 14px 18px;
+  font-size: 15px;
+ 
+}
+
+.you {
+  background-color: var(--bg-text-blue);
+  &>div{
+    
+    font-size: 18px;
+  }
+}
+
+.yourFriend {
+  background-color: rgba(76, 78, 100, 0.05);;
+  &>div{
+    color: #677483;
+    font-size: 18px;
+  }
+  .item-control {
+    right: 0;
+    transform: translate(48px, 50%);
+  }
+}
+
+.item-control {
+  position: absolute;
+  bottom: 50%;
+
+  svg {
+    visibility: hidden;
+  }
+
+  // background-color: ;
+  .icon {
+    cursor: pointer;
+    box-sizing: content-box;
+    padding: 5px;
+    border-radius: 100%;
+    transition: background-color 0.2s linear;
+
+    &:hover {
+      background-color: var(--primary-hover);
+    }
+  }
+}
+
+.icon-sent {
+  color: var(--tertiary);
+  align-self: flex-end;
+  margin-left: 5px;
+}
+
+.time {
+  color: var(--tertiary);
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+.modal {
+  min-width: 100px;
+  top: -100%;
+  transform: translate(0%, -50%);
+  padding: 5px;
+  right: 10px;
+
+  &::after {
+    display: none;
+  }
+}
+
+.deleted {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid var(--bg-text-grey);
+  color: var(--text-secondary);
+  background-color: unset;
+}
+
+.messagesBoxWrapper {
+  display: flex;
+  position: fixed;
+  padding-right: 130px;
+  margin-right: 10px;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  gap: 10px;
+
+}
+
+.boxBottom {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 5px;
+  width: 100%;
+  height: 150px;
+  padding-top: 18px;
+  max-height: 66px;
+  overflow: auto;
+  background-color: #ffff;
+  padding-left: 14px;
+  // padding-top: 2px;
+  border-top: 1.2px solid #d1d1d1;
+  box-shadow: 0 1px 2px hsl(0deg 0% 0% / 10%), 0 -1px #ffffff0d inset, 0 2px 1px -1px #ffffff0d inset;
+  ;
+
+}
+
+.btn {
+  color: #0084ffba;
+  padding: 8px 12px;
+  border-radius: 10px;
+  opacity: 0.85;
+
+  &:hover {
+    opacity: 1;
+    color: #0084ff;
+  }
+}
